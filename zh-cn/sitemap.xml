@@ -28,4 +28,13 @@
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://strutter0816.github.io/zh-cn/tags/"
+                    /></url><url>
+            <loc>https://strutter0816.github.io/zh-cn/about/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://strutter0816.github.io/about/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://strutter0816.github.io/zh-cn/about/"
                     /></url></urlset>

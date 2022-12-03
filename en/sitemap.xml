@@ -13,6 +13,15 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/"
                     /></url><url>
+            <loc>https://strutter0816.github.io/about/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://strutter0816.github.io/zh-cn/about/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://strutter0816.github.io/about/"
+                    /></url><url>
             <loc>https://strutter0816.github.io/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
