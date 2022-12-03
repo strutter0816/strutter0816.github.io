@@ -4,23 +4,15 @@
         <link>https://strutter0816.github.io/</link>
         <description>This is my Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
-            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sat, 03 Dec 2022 20:12:55 &#43;0800</lastBuildDate>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sat, 03 Dec 2022 21:30:32 &#43;0800</lastBuildDate>
             <atom:link href="https://strutter0816.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Test</title>
-    <link>https://strutter0816.github.io/test/</link>
-    <pubDate>Sat, 03 Dec 2022 20:12:55 &#43;0800</pubDate>
+    <title>Click This</title>
+    <link>https://strutter0816.github.io/clickthis/</link>
+    <pubDate>Sat, 03 Dec 2022 21:30:32 &#43;0800</pubDate>
     <author>Leonard</author>
-    <guid>https://strutter0816.github.io/test/</guid>
-    <description><![CDATA[this is a test]]></description>
-</item>
-<item>
-    <title>The First Blog</title>
-    <link>https://strutter0816.github.io/the-first-blog/</link>
-    <pubDate>Sat, 03 Dec 2022 20:08:47 &#43;0800</pubDate>
-    <author>Leonard</author>
-    <guid>https://strutter0816.github.io/the-first-blog/</guid>
-    <description><![CDATA[this is the Firs BLog]]></description>
+    <guid>https://strutter0816.github.io/clickthis/</guid>
+    <description><![CDATA[]]></description>
 </item>
 </channel>
 </rss>
