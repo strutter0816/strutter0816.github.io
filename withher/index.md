@@ -5,18 +5,13 @@
 
 # Hello, My Sweetie
 
-![](/mysweet.jpg)
+![image-20221205125318036](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202212051253385.png)
 
 # Always being with you
 
-![](/withyou.jpg)
+![image-20221205125409911](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202212051254435.png)
 
-![image-20221205121457423](https://cdn.jsdelivr.net/gh/%5Bstrutter0816%5D/%5BgithubPngImags%5D@main/img/image-20221205121457423.png)
+![image-20221205125231271](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202212051252965.png)
 
-![image-20221205121522747](https://cdn.jsdelivr.net/gh/%5Bstrutter0816%5D/%5BgithubPngImags%5D@main/img/image-20221205121522747.png)
-
-![image-20221205121537551](https://cdn.jsdelivr.net/gh/%5Bstrutter0816%5D/%5BgithubPngImags%5D@main/img/image-20221205121537551.png)
-
-![image-20221205121550248](https://cdn.jsdelivr.net/gh/%5Bstrutter0816%5D/%5BgithubPngImags%5D@main/img/image-20221205121550248.png)
-
+![image-20221205125436368](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202212051254869.png)
 
