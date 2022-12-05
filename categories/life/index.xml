@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>LIFE - Category - Strutter&#39;s Blog</title>
+        <link>https://strutter0816.github.io/categories/life/</link>
+        <description>LIFE - Category - Strutter&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sat, 03 Dec 2022 21:30:32 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/categories/life/" rel="self" type="application/rss+xml" /><item>
+    <title>With Her</title>
+    <link>https://strutter0816.github.io/withher/</link>
+    <pubDate>Sat, 03 Dec 2022 21:30:32 &#43;0800</pubDate>
+    <author>Leonard</author>
+    <guid>https://strutter0816.github.io/withher/</guid>
+    <description><![CDATA[some moments with her]]></description>
+</item>
+</channel>
+</rss>
