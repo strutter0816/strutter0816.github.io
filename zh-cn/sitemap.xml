@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://strutter0816.github.io/zh-cn/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://strutter0816.github.io/zh-cn/categories/</loc><lastmod>2022-12-12T22:54:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://strutter0816.github.io/categories/"
@@ -11,7 +11,16 @@
                     hreflang="zh-cn"
                     href="https://strutter0816.github.io/zh-cn/categories/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/zh-cn/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://strutter0816.github.io/zh-cn/posts/</loc><lastmod>2022-12-12T22:54:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://strutter0816.github.io/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://strutter0816.github.io/zh-cn/posts/"
+                    /></url><url>
+            <loc>https://strutter0816.github.io/zh-cn/</loc><lastmod>2022-12-12T22:54:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://strutter0816.github.io/"
@@ -20,7 +29,7 @@
                     hreflang="zh-cn"
                     href="https://strutter0816.github.io/zh-cn/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/zh-cn/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://strutter0816.github.io/zh-cn/tags/</loc><lastmod>2022-12-12T22:54:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://strutter0816.github.io/tags/"
@@ -29,6 +38,9 @@
                     hreflang="zh-cn"
                     href="https://strutter0816.github.io/zh-cn/tags/"
                     /></url><url>
+            <loc>https://strutter0816.github.io/zh-cn/categories/%E9%9B%85%E6%80%9D%E5%A4%87%E8%80%83/</loc><lastmod>2022-12-12T22:54:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://strutter0816.github.io/zh-cn/tags/%E9%9B%85%E6%80%9D%E5%86%99%E4%BD%9C/</loc><lastmod>2022-12-12T22:54:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://strutter0816.github.io/zh-cn/ielts_writing/</loc><lastmod>2022-12-12T22:54:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://strutter0816.github.io/zh-cn/about/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"

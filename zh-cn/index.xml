@@ -4,7 +4,15 @@
         <link>https://strutter0816.github.io/zh-cn/</link>
         <description>This is my Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
-            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Mon, 12 Dec 2022 22:54:28 &#43;0800</lastBuildDate>
             <atom:link href="https://strutter0816.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>雅思写作</title>
+    <link>https://strutter0816.github.io/zh-cn/ielts_writing/</link>
+    <pubDate>Mon, 12 Dec 2022 22:54:28 &#43;0800</pubDate>
+    <author>Leonard</author>
+    <guid>https://strutter0816.github.io/zh-cn/ielts_writing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
