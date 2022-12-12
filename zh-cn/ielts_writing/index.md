@@ -72,11 +72,11 @@ However, those who support the idea that ..can also justify their opinion.
    第3句: 如果把这个活动变成高中教育的一部分,在这个过程中 ,学生就会意识到了社会上每个人的思想和行为都是不同的,并且学会尊重这种不同 （B）
    第4句: 从而,学生就会学习学会站在别人的角度去思考问题 ,（C） 最终, 提高自己的社交技能 （D）
 
-   **第1句:   topic sentence 写最终的好处 **（最后写）
+   第1句:   topic sentence 写最终的好处 （最后写）
 
-   **第2句:  A**
-    **第3句:  B** 
-   **第4句： C -D**
+   第2句:  A
+    第3句:  B 
+   第4句： C -D
 
    
 
