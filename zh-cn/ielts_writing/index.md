@@ -99,6 +99,10 @@ However, those who support the idea that ..can also justify their opinion.
    第2句: team sports 可以让小朋友学会如何与人有效的合作. 比如说: 怎么样根据自己的优势,分配角色; 怎么样清晰表达自己的观点; 发生不同观点的时候,如何解决 等 （A） 
    第3句: 因为,未来的工作中,他们肯定会有很多 projects 需要和同事一起完成       如果他们有了这些team work 的技能,就可以更有效的和同事合作 （B） 
    第4句: 帮助他们高效的完成工作 （C） 
+   
+## 技能三（万能逻辑）
+   
+   
 
 ## 步骤
 
