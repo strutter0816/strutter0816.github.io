@@ -29,5 +29,4 @@
 
 ![bec7428e37343897fad827409df7478](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202212052014372.jpg)
 
-<video src="douyin.mp4"></video>
 
