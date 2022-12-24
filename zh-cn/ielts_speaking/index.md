@@ -115,6 +115,27 @@
 2. whereas/in contrast 
 3. whereas/in contrast -sleep
 
+#### DISLIKE
+
+##### 影响喜欢的
+
+Do you like doing outdoor exercise ?
+No. I don’t do any outdoor exercise because I have found that it is very likely for me to get distracted when I do it, probably dueto the noise or burning sunshine.
+
+In contrast, if I do exercise indoors, like lifting weights, it is easyfor me to stay focused
+While lifting weights, I can feel a strong mind-muscleconnection, which helps me to cultivate a peaceful mind.
+
+##### 没有必要
+
+Do you like giving others gifts ?
+Idont like giving people gifts because I find it unnecessary.
+To be honset, I dont think that giving a person a gifthasanything to dowith our relationship
+What really mattersis how much time we spend oncultivating therelationship and the sense of connection both ofus feel
+
+
+
+
+
 
 
 
