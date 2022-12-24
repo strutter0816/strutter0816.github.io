@@ -3,15 +3,15 @@
 
 <!--more-->
 
-# PART1
+## PART1
 
 提升流利度的过渡词
 
-## LIKE/DISLIKE
+### LIKE/DISLIKE
 
-### LIKE
+#### LIKE
 
-#### 反向+
+##### 反向+
 
 1. 反向+present+stress
 
@@ -68,7 +68,7 @@
 
    If it were not the help of this app,
 
-#### while+
+##### while+
 
 1. while+present（+反向)
 2. while+focused（+反向）
@@ -76,7 +76,7 @@
 4. whenever+focused
 5. whenever+present
 
-#### Before now + 
+##### Before now + 
 
 1. before now +present
 
@@ -98,7 +98,7 @@
 
    However, after I started playing the same song at work, I have been writing more productively than before.
 
-#### compared to +
+##### compared to +
 
 1. compared to efficient
 
@@ -109,7 +109,7 @@
 
 2. compared to sleep
 
-#### whereas/in contrast
+##### whereas/in contrast
 
 1. whereas/in contrast -efficient
 2. whereas/in contrast 
@@ -117,11 +117,11 @@
 
 
 
-### 
 
 
 
-# PART2
 
-# PART3
+## PART2
+
+## PART3
 
