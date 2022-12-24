@@ -3,6 +3,24 @@
 
 <!--more-->
 
+## Daily routine
+
+i get up at 8 am and wash up
+i have breakfast at 8:30am
+after breakfast i get dressed and go to the gym 
+after working out , i  take a shower, and go home
+
+at 12pm i  have lunch
+after eating ,i swipe my phone
+then i take a nap
+
+i get up at 2pm
+then i start to do daily tasks 
+i have dinner at 6 pm
+
+in the evening , i watch tv with my parents
+at 10 pm i go to sleep
+
 ## PART1
 
 提升流利度的过渡词
@@ -71,12 +89,16 @@
 ##### while+
 
 1. while+present（+反向)
+
+   
 2. while+focused（+反向）
 3. whenever +present
 4. whenever+focused
 5. whenever+present
 
 ##### Before now + 
+
+**before**  **however**
 
 1. before now +present
 
@@ -131,6 +153,12 @@ Do you like giving others gifts ?
 Idont like giving people gifts because I find it unnecessary.
 To be honset, I dont think that giving a person a gifthasanything to dowith our relationship
 What really mattersis how much time we spend oncultivating therelationship and the sense of connection both ofus feel
+
+### Describe
+
+there be +菜/home/可爱的家/
+
+
 
 
 

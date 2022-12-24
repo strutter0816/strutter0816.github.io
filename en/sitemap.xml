@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://strutter0816.github.io/categories/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://strutter0816.github.io/categories/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://strutter0816.github.io/zh-cn/categories/"
@@ -11,9 +11,9 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/categories/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/categories/life/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://strutter0816.github.io/withher/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://strutter0816.github.io/posts/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://strutter0816.github.io/categories/life/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://strutter0816.github.io/withher/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://strutter0816.github.io/posts/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://strutter0816.github.io/zh-cn/posts/"
@@ -22,7 +22,7 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/posts/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://strutter0816.github.io/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://strutter0816.github.io/zh-cn/"
