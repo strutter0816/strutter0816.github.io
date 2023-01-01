@@ -4,9 +4,17 @@
         <link>https://strutter0816.github.io/</link>
         <description>This is my Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
-            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sat, 03 Dec 2022 21:30:32 &#43;0800</lastBuildDate>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sat, 31 Dec 2022 17:54:40 &#43;0800</lastBuildDate>
             <atom:link href="https://strutter0816.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>C&#43;&#43; notes</title>
+    <link>https://strutter0816.github.io/cpp/</link>
+    <pubDate>Sat, 31 Dec 2022 17:54:40 &#43;0800</pubDate>
+    <author>Leonard</author>
+    <guid>https://strutter0816.github.io/cpp/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>My Darling</title>
     <link>https://strutter0816.github.io/withher/</link>
     <pubDate>Sat, 03 Dec 2022 21:30:32 &#43;0800</pubDate>

@@ -5,7 +5,7 @@
 
 
 
-{{< music server="netease" type="song" id="1895385833" autoplay=true >}}
+{{< music server="netease" type="song" id="1411157152" autoplay=true >}}
 
 
 
