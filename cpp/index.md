@@ -257,3 +257,352 @@ int main()
 
 ![image-20230101141217725](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202301011412837.png)
 
+### Arrays
+
+pass arrays to a function
+
+```cpp
+void myFunction(int myNumbers[5]) {
+  for (int i = 0; i < 5; i++) {
+    cout << myNumbers[i] << "\n";
+  }
+}
+
+int main() {
+  int myNumbers[5] = {10, 20, 30, 40, 50};
+  myFunction(myNumbers);
+  return 0;
+}
+```
+
+### Recursion
+
+```cpp
+int sum(int k)
+{
+   if (k > 0)
+   {
+      /* code */
+      return k + sum(k - 1);
+   }
+   else
+   {
+      return 0;
+   }
+}
+int main()
+{
+
+   int result = sum(100);
+   cout << result;
+}
+```
+
+the program follows these steps
+
+10 + sum(9)
+10 + ( 9 + sum(8) )
+10 + ( 9 + ( 8 + sum(7) ) )
+...
+10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + sum(0)
+10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0
+
+## Classes
+
+```cpp
+class myClass
+{
+public:
+   int no;
+   string name;
+};
+
+int main()
+{
+
+   myClass myclass;
+   myclass.name = "Leonard Chow";
+   myclass.no = 20;
+}
+
+```
+
+### Constructor Parameter
+
+```cpp
+class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string x, string y, int z) { // Constructor with parameters
+      brand = x;
+      model = y;
+      year = z;
+    }
+};
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("BMW", "X5", 1999);
+  Car carObj2("Ford", "Mustang", 1969);
+
+  // Print values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}
+```
+
+### Access Specifiers
+
+- public --members are accessible from outside the class
+- private --members cannot be accessed from outside the class
+- protected  --member cannot be accessed from outside the class, however, they can be accessed in inherited classes. You will learn more about Inheritance later.
+
+```cpp
+class MyClass {
+  public:    // Public access specifier
+    int x;   // Public attribute
+  private:   // Private access specifier
+    int y;   // Private attribute
+};
+
+int main() {
+  MyClass myObj;
+  myObj.x = 25;  // Allowed (public)
+  myObj.y = 50;  // Not allowed (private)
+  return 0;
+}
+```
+
+if you try to access to private member ,an erroe occurs
+
+```
+error: y is private
+```
+
+### Encapsulation
+
+we should make sure that "sensitive " data is hidden from users, To achieve this ,we must declare class variables/attributes as private(cannot be accessed from the outside class).Then we should provide getter and setter methods
+
+```cpp
+class Employee {
+  private:
+    // Private attribute
+    int salary;
+
+  public:
+    // Setter
+    void setSalary(int s) {
+      salary = s;
+    }
+    // Getter
+    int getSalary() {
+      return salary;
+    }
+};
+```
+
+### Inheritance
+
+To inherit from a class,use the **:** symbol
+
+```CPP
+// Base class
+class Vehicle {
+  public:
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+};
+
+// Derived class
+class Car: public Vehicle {
+  public:
+    string model = "Mustang";
+};
+
+int main() {
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + " " + myCar.model;
+  return 0;
+}
+```
+
+#### Multilevel Inheritance
+
+```cpp
+// Base class (parent)
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Derived class (child)
+class MyChild: public MyClass {
+};
+
+// Derived class (grandchild)
+class MyGrandChild: public MyChild {
+};
+
+int main() {
+  MyGrandChild myObj;
+  myObj.myFunction();
+  return 0;
+}
+```
+
+OR
+
+```cpp
+// Base class
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Another base class
+class MyOtherClass {
+  public:
+    void myOtherFunction() {
+      cout << "Some content in another class." ;
+    }
+};
+
+// Derived class
+class MyChildClass: public MyClass, public MyOtherClass {
+};
+
+int main() {
+  MyChildClass myObj;
+  myObj.myFunction();
+  myObj.myOtherFunction();
+  return 0;
+}
+```
+
+#### Access Specifiers
+
+used protected which is similar to private, but it can be accessed in the inherited class.
+
+```cpp
+// Base class
+class Employee {
+  protected: // Protected access specifier
+    int salary;
+};
+
+// Derived class
+class Programmer: public Employee {
+  public:
+    int bonus;
+    void setSalary(int s) {
+      salary = s;
+    }
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Programmer myObj;
+  myObj.setSalary(50000);
+  myObj.bonus = 15000;
+  cout << "Salary: " << myObj.getSalary() << "\n";
+  cout << "Bonus: " << myObj.bonus << "\n";
+  return 0;
+}
+```
+
+### Files
+
+```cpp
+#include<iostream>
+#include<fstream>
+```
+
+- ofstream --- create and write to files
+- ifstream -- Reads from files
+- fstream -- A combination of ofstream and ifstream: create read write to files
+
+Create and write to a file
+
+```CPP
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+   ofstream Myfile("test.txt");
+   Myfile <<"stay hungery and stay foolish!";
+   Myfile.close();
+   return 0;
+
+}
+```
+
+Read a file
+
+```cpp
+int main(){
+   string myText;
+   ifstream MyreadFile("test.txt");
+   while (getline(MyreadFile,myText))
+   {
+      /* code */
+      cout<<myText<<endl;
+   }
+   MyreadFile.close();
+   
+
+}
+```
+
+### Exceptions
+
+three keyword  :**try**  **throw** **catch**
+
+we use try block to test code if we throw the exception 
+
+**throw** keyword to output a reference number
+
+
+
+```cpp
+  try
+   {
+      int age = 5;
+      if (age >= 18)
+      {
+         cout << "Access granted - you are old enough.";
+      }
+      else
+      {
+         throw(age);
+      }
+   }
+   catch (int myNum)
+   {
+      cout << "Access denied - You must be at least 18 years old.\n";
+      cout << "Age is: " << myNum;
+   }
+```
+
+in catch block we can use a reference number we throwed;if we don't know what type we use ,we can use the "three dots" inside the catch block
+
+just like this 
+
+```cpp
+catch (...){
+  // code
+}
+```
+
+
