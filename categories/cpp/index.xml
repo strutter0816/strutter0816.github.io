@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>CPP - Category - Strutter&#39;s Blog</title>
+        <link>https://strutter0816.github.io/categories/cpp/</link>
+        <description>CPP - Category - Strutter&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sat, 31 Dec 2022 17:54:40 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/categories/cpp/" rel="self" type="application/rss+xml" /><item>
+    <title>C&#43;&#43; notes</title>
+    <link>https://strutter0816.github.io/cpp/</link>
+    <pubDate>Sat, 31 Dec 2022 17:54:40 &#43;0800</pubDate>
+    <author>Leonard</author>
+    <guid>https://strutter0816.github.io/cpp/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

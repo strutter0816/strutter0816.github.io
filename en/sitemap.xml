@@ -3,6 +3,17 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
             <loc>https://strutter0816.github.io/cpp/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://strutter0816.github.io/categories/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://strutter0816.github.io/zh-cn/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://strutter0816.github.io/categories/"
+                    /></url><url>
+            <loc>https://strutter0816.github.io/categories/cpp/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://strutter0816.github.io/tags/cpp-tutorial/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://strutter0816.github.io/posts/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -21,14 +32,14 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/categories/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://strutter0816.github.io/tags/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://strutter0816.github.io/zh-cn/categories/"
+                        href="https://strutter0816.github.io/zh-cn/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://strutter0816.github.io/categories/"
+                    href="https://strutter0816.github.io/tags/"
                     /></url><url>
             <loc>https://strutter0816.github.io/categories/life/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://strutter0816.github.io/withher/</loc><lastmod>2022-12-03T21:30:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
@@ -40,13 +51,4 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://strutter0816.github.io/about/"
-                    /></url><url>
-            <loc>https://strutter0816.github.io/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://strutter0816.github.io/zh-cn/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://strutter0816.github.io/tags/"
                     /></url></urlset>
