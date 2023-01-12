@@ -215,7 +215,7 @@ in general, generally speaking
 
 **总而言之**
 
-to sum up, in conclusion, all in all, the whole,in a word, as above discussed
+to sum up, in conclusion, all in all, the whole,in a word, As discussed above
 
 In a word, they can do everything they like with money.
 
