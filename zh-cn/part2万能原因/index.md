@@ -17,7 +17,7 @@
 
 1. with the help  of my teacher, I learned to teach myself through books and videos
 2. Through my studies, I eventually built a large website, which gave me a great sense of achievement
-3. Through this project, I had also found my interest and it had given me a clear goal for the future,, I want to be a development engineer
+3. Through this project, I also found my interest and it had given me a clear goal for the future, I want to be a development engineer
 4. This has taught me that self-learning skills are important at university and it has helped me find a  clear direction I love
 
 
