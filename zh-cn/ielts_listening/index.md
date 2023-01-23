@@ -3,6 +3,10 @@
 
 <!--more-->
 
+## 雅思阅读/听力评分表
+
+![细说雅思阅读评分标准_雅思阅读资讯-新东方在线移动版](https://media8.smartstudy.com/atheneBackend/1582509091292VkW2D9.png)
+
 听力做题步骤
 
 读 猜 听 写 查

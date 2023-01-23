@@ -3,6 +3,10 @@
 
 <!--more-->
 
+# 雅思阅读/听力评分表
+
+![细说雅思阅读评分标准_雅思阅读资讯-新东方在线移动版](https://media8.smartstudy.com/atheneBackend/1582509091292VkW2D9.png)
+
 # FAST READING 
 
 **阅读做题之前都要全文fast reading**，**然后对题目的关键词进行提取，和原文的关键词进行对应，然后选答案**
