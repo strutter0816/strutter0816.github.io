@@ -19,6 +19,8 @@
 
 ## LIST OF HEADING
 
+**读第一句，第二句，最后一句，下段第一句**
+
 1. fast reading **(the first thing you should do in any problem!)** 
 2. 把已有答案的一行标注掉 不看
 3. 划出list of heading 框框的keyword 每一个（名词 时间 大写字母提取首字母  破折号（复合词）
