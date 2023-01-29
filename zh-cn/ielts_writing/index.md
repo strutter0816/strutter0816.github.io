@@ -558,3 +558,70 @@ C是明确的
 
 ## 小作文
 
+structure
+
+### 动态图
+
+➢**Two types of structures** **（ 多⽤于动态图：有时间的）** 
+
+#### Structure 1: 8 S
+
+Introduction: 1S-2S （ 改写题）
+
+Body 1: a>b>c 3S (纵向比较）
+
+Body 2: same trend….By contrast, same trend 3S (横向⽐较）
+
+Conclusion: 1S -2S （ 整体趋势）
+
+#### Structure 2: 8 S 
+
+Introduction: 1S -2S （ 改写）
+
+Body 1: same trend (a>b>c) （ 横向同趋势＋纵向⽐较）
+
+Body 2: By contrast, same trend （ 横向相反趋势＋纵向⽐较）
+
+Conclusion: 1S-2S （ 整体趋势）
+
+ ***2 types of graphs:*** 
+
+**Type 1 : graphs with time** 
+
+**Structure 1 or Structure 2 ( Example, Line)** 
+
+**Type 2: graphs without time** 
+
+**Structure 1 ( Example, Table)** 
+
+### 表格
+
+#### **每列数据之间没有相关性**
+
+**同列⽐⼤⼩，（不同列⽐较位置）**
+
+**同列数据：最⼤值，最⼩值，中间项**
+
+**First column：a1>b1>c1 ( **⽐⼤⼩）**
+
+**Second column: a2>b2>c2 ( a1//a2** **⽐位置）** 
+
+**Third column: a3>b3>c3 ( a2//a3** **⽐位置）**
+
+#### **每列数据之间有相关性**
+
+**Body1:** **整体⽐较每列数值** 
+
+**Body 2-Body 3/4:** **同列⽐⼤⼩，（不同列⽐较位置）**
+
+### 地图
+
+根据地图进行分段
+
+- 现在和将来分B1 AND B2
+- 第一个和第二个分B1 AND B2
+
+### 流程图
+
+根据流程先后进行分段
+
