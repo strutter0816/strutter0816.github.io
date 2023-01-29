@@ -552,16 +552,9 @@ C是明确的
 
 句子结构
 
-![image-20230128172608431](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202301281726598.png)
+![image-20230129121232452](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202301291321925.png)
 
-​            ![image-20230128172715938](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202301281727046.png)
 
-| 解释原因  A 推倒 B  B 推倒 C  4种表达 | 定语从句  现在分词 | 家长和小朋友经常使用运动设施  只是为了娱乐  这样可以帮小朋友在很小的时候  建立对于运动很好的态度 | Parents and children  often use sports facilities together just for fun,  which would develop  a positive attitude to exercise at an early age.     , thus developing |
-| ------------------------------------- | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|                                       | 第1/0条件句        | 如果..  如果小朋友总是被有诱惑的东西围绕     他们的专注力很可能会降低 | If ..might/could/ 直接动词     For another, a  growing child’s concentration span may suffer if they are constantly  surrounded by too many tempting objects. |
-|                                       | 比较               | 改善公共交通会有帮助（多运动）：  走到公交站的时间比走到私家车的时间长 | Improving public  transport would help: it takes longer to walk to the bus stop than to the  car. |
-| 提出解决方法  2种表达                 | 被动语态           | 我们应该鼓励人们去..                                         | People should be  encouraged not only to be more physically active but also to adopt a  healthier lifestyle in general. |
-|                                       | 第2条件句          | 如果有方便的体育中心  我们就更可能去运动                     | If there were  easy-to-reach local sports centres,      we would be more  likely to make exercise a regular part of our lives. |
 
 ## 小作文
 
