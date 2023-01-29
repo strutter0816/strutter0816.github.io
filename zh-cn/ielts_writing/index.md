@@ -602,7 +602,7 @@ Conclusion: 1S-2S （ 整体趋势）
 
 **同列数据：最⼤值，最⼩值，中间项**
 
-**First column：a1>b1>c1 ( **⽐⼤⼩）**
+**First column：a1>b1>c1 ( **⽐⼤⼩）
 
 **Second column: a2>b2>c2 ( a1//a2** **⽐位置）** 
 
