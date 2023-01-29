@@ -25,6 +25,11 @@ at 10 pm i go to sleep
 
 提升流利度的过渡词
 
+- 反向IF
+- whenever while/when
+- Before/after
+- compared to
+
 ### LIKE/DISLIKE
 
 #### LIKE
@@ -90,7 +95,6 @@ at 10 pm i go to sleep
 
 1. while+present（+反向)
 
-   
 2. while+focused（+反向）
 3. whenever +present
 4. whenever+focused
