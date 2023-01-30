@@ -456,18 +456,18 @@ C是明确的
 通过句子记忆
 
 | Step1:  读英文,标记 verb+ noun 的搭配  e.g. rely on sth for ruel | Step2 把英文 翻译成 中文  形式 类似 我的参考答案 就可以了 (参考答案,只是"参考",没有必要,和我一样) 按照 单词 出现的 顺序翻译 翻译 出来 每个单词的 语法功能   目的:   1. 你会更有意识,不同9个语法结构的功能 2. 这样的中文, 可以直接 翻译成7+句子  e.g. to do sth = 目的是 e.g. 如果有定语从句, 分开翻译 People who come from different cultures and economic statuses 人们, 来自不同文化 和经济背景的人 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Vechicles rely on fossil fuels for fuel                      | 汽车 依赖 fossil fuels 作为燃料  fossil fuels: 化石燃料 https://www.sciencedaily.com/terms/fossil_fuel.htm |
+| :----------------------------------------------------------: | :----------------------------------------------------------- |
+|           Vechicles rely on fossil fuels for fuel            | 汽车 依赖 fossil fuels 作为燃料  fossil fuels: 化石燃料 https://www.sciencedaily.com/terms/fossil_fuel.htm |
 | Providing heating and electricity to households usually requires burning fossil fuels.   The operation of many factories require the burning of fossil fuels. | 提供 供暖和供电  通常需要 燃烧 fossil fuels   很多工厂 都需要  燃烧 fossil fuels. |
 | Vehicles can emit/release/ produce pollutants / green house gasses into the air. | 汽车 向空气中 排放 green house gases  greenhouse gases: 温室气体 Gases that trap heat in the atmosphere are called greenhouse gases. https://www.epa.gov/ghgemissions/overview-greenhouse-gases |
 | An increasing number of vehicles has been deteriorating air quality/increasing air pollution. | 越来越多的 车辆  一直在让 空气污染恶化                       |
 | Living in an environment with a lot of pollution increases our risk of catching illnesses such as coughing, skin allergies, and headaches. | 住在一个 有污染的 环境  增加 得病的 危险  这些病 包括 咳嗽 皮肤过敏 头疼 |
 | There is a large amount of water (uncountable)  I have a large amount of money/time. (uncountable)  There is an exessive amount of junk food (uncountable)  There is a great deal of money/water/time (uncountable)  There are a large number of people / students (countable, plural nouns)  plenty of : (理解即可 雅思写作 很少用) enough and more. It is used before singular uncountable and plural nouns.  Plenty of shops accept credit cards. | 这里 有很多 水   我 有很多钱/时间  这里 有 过多的 垃圾食品  这里有 很多 人/学生 |
-| Global warming has been increasing the global temperature.   | Global warming (全球气候 变暖)  一直都在增加 全球的 气温     |
+|  Global warming has been increasing the global temperature.  | Global warming (全球气候 变暖)  一直都在增加 全球的 气温     |
 | Global warming has raised the sea levels. Global warming has led to the rise of sea levels. | Global warming 已经导致 海平面的 上升                        |
 | Global warming has lead to more extreme weather conditions such as storms, floods, volcanic explosions, hurricanes. | Global warming 已经导致 更多的 极端天气情况 这个情况包括 暴风 洪水 火山爆发 龙卷风等 |
 | Global warming has led to the spread of infectious illnesses. | Global warming 已经导致了 传染病 的传播                      |
-| Trees can absorb pollutants.                                 | 树木 可以 吸收 污染物                                        |
+|                 Trees can absorb pollutants.                 | 树木 可以 吸收 污染物                                        |
 | Old buildings are very likely to collapse under extreme weather such as storm, and snow.   Old buildings are very vulnerable under extreme weather. | 老的建筑物 很容易 坍塌 在极端天气情况的时候 坍塌  vulnerable: 容易受到 physical or emotional attack or harm. |
 | If we do not impose any restrictions on the usage of vehicles, traffic congestion and air pollution will deteriorate. | 如果 我们 不限制 汽车的使用 交通拥堵 和 空气污染 都会恶化    |
 | Fossil fuels are non-renewable sources of energy, so sooner or later, they will be exhausted. | Fossil Fuels 是不可再生 能源 迟早, 他们会 被用完 (没有了)    |
@@ -476,7 +476,7 @@ C是明确的
 | If we work on one task for an extended period of time, we may feel bored. | 如果 我们 做一件事情 持续很长时间 我们 很容易 感到 无聊      |
 | If we stare at the screen for an extended period of time, our eyes may feel tired, and if we watch TV,use mobile phones or ipad frequently, such activities will be detrimental to our vision. | 如果我们 盯着屏幕, 看很长时间 我们的眼睛 很可能 觉得 很疲惫 并且 如果 我们 看电视 用手机 ipad 总是很频繁 这样的活动 会对 我们的 视力不好 |
 | While we are watching TV, most people like sitting there in one position. | 当 我们 正在 看电视 的时候 大部分人 喜欢 在一个位置 坐着     |
-| Children are at the critical stage of bone formation.        | 还在 正 处在一个 很关键的 阶段 一个关键的 骨骼形成 的阶段    |
+|    Children are at the critical stage of bone formation.     | 还在 正 处在一个 很关键的 阶段 一个关键的 骨骼形成 的阶段    |
 | Children are more vulnerable than adults to environmental risks such as air pollution.   Children are particularly vulnerable to environmental risks such as air pollution.   Children are more vulnerable than adults to violence from the media. | 小朋友 比 成年人 更容易 在 受到  环境risks 的影响, 这个risk 包括 空气污染 (小朋友在污染的 环境里面,很容易生病)  小朋友 比 成年人 更容易 在 受到 媒体上面 暴力画面 的影响 |
 | suffer from/develop diseases/disorders/catch illnesses  diseases/disorders/illnesses | 生病                                                         |
 | intriguing: arousing one's curiosity or interest; fascinating.  e.g.intriguing TV programs.   engaging: charming and attractive.  e.g. engaging TV programs.   appealing: attractive or interesting.  e.g. appealing look   entertaining:providing amusement or enjoyment. e.g. entertaining TV programs.    amusing: causing laughter and providing entertainment. e.g. amusing comedy show | 有意思的 电视节目  漂亮的 外表 有 娱乐性 的电视节目 让人发笑 的喜剧演出 |
@@ -494,11 +494,11 @@ C是明确的
 | cultivate: to create a new condition by directed effort: We’re trying to help these kids cultivate an interest in science.  develop:  It is important to develop excellent social sills. | 我们正在 帮助 这些孩子 培养 科学上面的兴趣  培养很好的 社交技能 很重要 |
 | People who come from different cultures and economic statuses may behave differently, so they may not get along well with each other. | 人们, 来自 不同 文化和经济 背景 的人们 可能 行为不同 所以, 他们不会和彼此 相处得很好 |
 | Empathy can reduce the conflicts among people coming from different backgrounds and those with different personalities. | 同理心可以降低 人们之间的隔阂 来自不同背景 不同 性格人之间的 隔阂 |
-| make us become more capable of                               | 让我们 更有能力                                              |
+|                make us become more capable of                | 让我们 更有能力                                              |
 | It is very common for us to encounter difficulties/obstacles in life. | 遇到困难 是一件 很平常的事情                                 |
 | Family and friends can share their experience with us, so that we would not make similar mistakes and be inspired by their successful experience. | 家人和朋友 可以 和我们分享 经验 这样一来 我们不会 犯同样的错误  很可能 被 他们 成功的经验 启发 |
-| People used to assume that the earth was flat.               | 人们 以前 假设 地球是平的                                    |
-| Most students find it difficult to understand chemistry.     | 大部分学生 觉得 理解化学 很困难                              |
+|        People used to assume that the earth was flat.        | 人们 以前 假设 地球是平的                                    |
+|   Most students find it difficult to understand chemistry.   | 大部分学生 觉得 理解化学 很困难                              |
 | Communicating by/via/ digital devices has replaced face-to-face communication. | 通过 电子设备 交流  已经 取代了 面对面交流                   |
 | When we communicate face-to-face, we use not only verbal languages but also facial expressions as well as body language to express our thoughts. | 当我们 面对面 交流 我们使用的 不仅仅是 语言 还包括 面部表情 和 肢体语言来表达 自己的思想 |
 | Face-to-face communication is more likely to help others recognize and understand our emotions and feelings. | 面对面的交流 更容易 帮别人  意识到 并且 理解 情绪和感情      |
@@ -509,7 +509,7 @@ C是明确的
 | After we gain an indepth understanding of the IELTS test, we would prepare for it more efficiently and effectively. | 在我们 对于 雅思考试 有深入的了解以后 我们 就会 更有效率 的准备它 |
 | After we study history, we may find our current life having something in common with the past, thus relating our current life to the past, enhancing a sense of belonging to our roots/country/motherland. | 在我们 学习历史 以后 我们 会发现 我们现在的生活 和过去 有一些 共同点 从而 把现在和过去 联系在一起  增加 对于我们 自己国家的 归属感 |
 | If we feel a great sense of belonging to a country or we like the government, we would be willing to cooperate with other members in society to contribute to the country's future, thus enhancing social cohesion/ leading to a more cohesive society. | 如果 我们 对于自己国家 有归属感 或者 我们喜欢 自己的国家 我们 会愿意 和这个社会的 其他人 合作 来为 社会的未来 做贡献 从而 增加 社会凝聚力 |
-| Developing more skilled workers promotes the economy.        | 培养更多 skilled workers  可以 促进  经济发展                |
+|    Developing more skilled workers promotes the economy.     | 培养更多 skilled workers  可以 促进  经济发展                |
 | A person who has developed sound moral values has a low tendecy to commit crimes.   Children's moral values have not been established soundly, so they may not be able to identify misbehaviours and copy them. | 一个已经有了 很好的 moral values 的人 犯罪的动机 很低  小朋友的 道德观 还没有 形成的 很完善 所以 他们可能 识别不出来 misbehaviours  并且 很容易 模仿这些 行为 |
 | A society with low crime rates is likely to have a great level of safety. | 一个 有低 犯罪的社会 很容易 有高度的 安全                    |
 | If we can make decisions based on our own interests and desires, we would be open-minded in trying a variety of things, helping us find what we are truely passionate about. This process can enhance our self-awareness and identity. | 如果我们 可以做决定  根据我们的喜好 和 想做的事情 做决定 我们很容易 变得 open-minded  去尝试 不一样的事情 帮助我们 发现 自己真正 有热情的 事情 这个过程, 可以增加 self-awareness 和 identity |
