@@ -20,6 +20,7 @@ IELTS SPEAKING 4个万能原因
 4.因为我的外向性格，我总想做一个带头人，喜欢帮助其他人，希望带领其他人做一些让他们成功的事情，这会让我有很大的成就感
 
    Because of my outgoing personality, I always want to be a leader; I like to help others and want to lead others to do something that will make them successfu .If I finished things successfull ,I would feel a sense of achievement.
+
 5.我喜欢那些给我很多自由去创造的东西，允许我创造一些独特的东西。我感觉我发明了一个新的东西，这非常令人兴奋。
 
    I like things that give me much freedom to creat ,allowing me to create something uniqu .I feel like I've invented a new item ,which is very exciting.
