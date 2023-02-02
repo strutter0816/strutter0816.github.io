@@ -548,7 +548,7 @@ C是明确的
 | We are exposed to massive amount of news and advertisements everyday, which may cause us to consider whatever broadcasted as social norms and we should conform to this norms to be accepted by the society. As a result, we may lose our own identies. | 我们 每天 接触 大量的新闻 和 广告  这个现象 导致我们 认为  任何 宣传的东西 都是 社会的,普遍现象 并且  我们应该 和这些 现象 一样  目的是 获得 社会的接受  结果,我们很可能丢掉自己的 identities |
 | Elder people are likely to stick to outdated beliefs and practices. If we blindly follow their ways of living without assessing them, this may impede us from deriving the advantages provided by modern society : more advanced technologies and open-minded beliefs. | 老年人 很可能 保留着 陈旧的 思想 和 行为 如果 我们 盲目的 跟从 他们的生活方式  而不去 想一下 这些方式 是否是对的 这样的情况 很可能 阻止我们 从现代社会里面 获得好处 更多先进的技术 和 更加 open-minded 的思想 |
 
-## 技能五 语法
+技能五 语法
 
 句子结构
 
