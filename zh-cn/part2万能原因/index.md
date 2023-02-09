@@ -3,6 +3,8 @@
 
 <!--more-->
 
+人物
+
 发生前：
 
 1. When I was a freshman, my major was computer science, and I found that I was very new to my major because I had no exposure to computers before I went to university
@@ -20,4 +22,16 @@
 3. Through this project, I also found my interest and it had given me a clear goal for the future, I want to be a development engineer
 4. This has taught me that self-learning skills are important at university and it has helped me find a  clear direction I love
 
+爱好
+workout 每天早上起来吃完早饭，去健身房做weight lifting take shower at the gym
+
+生日：
+
+和家里人聚餐，吃面，吃蛋糕，和朋友出去玩，打篮球或者唱歌
+
+地点：
+
+我生活在一个西北的小镇，气候干燥
+
+旅游过的地方 
 

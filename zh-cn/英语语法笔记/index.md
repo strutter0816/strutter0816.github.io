@@ -109,3 +109,40 @@ on还可以用来表无法在纸本上呈现的电子媒体资讯。
 例如：*We are meeting **at** the cafe.* (Let's meet at the cafe.)
 *The football game is **at** the stadium.*
 
+## FOR 和TO
+
+- **表动机、目的**
+
+虽然介系词for 跟to 都有表达动机、目的地意思，但是在语法架构上，to 后面接的是动词，而for 后面接的是名词。
+
+> I moved to Taipei **for** a new job.
+>
+> 我为了找工作搬到台北。
+
+> I moved to Taipei to work.
+> 我搬到台北工作。
+
+- **表地点、目的地**
+  For 跟to 都有表达前往某个地点的意思，但是**for**通常会跟leave, start, set out, set off, depart, be bound 等动词连用，且有**向某个方向前进**的意思。**To**则较常与come, drive, fly, get, go, lead, move, return, ride, run, travel, walk 等动词搭配使用，有明确**到达某个目的地**的含义。
+
+> This flight is bound **for** Taipei.
+> 这架航班将飞往台北。
+
+> This train is going **to** Rome.
+> 这列火车要去罗马。
+
+### TO
+
+![image-20230209221044460](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202302092210598.png)
+
+1. Let's meet at ten to eleven.
+2. It's about 8km from my apartment to yours.
+3. I prefer apples to watermelons.
+4. I am going to Italy.
+
+#### FOR
+
+![image-20230209221227812](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202302092212962.png)
+
+![image-20230209221245663](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202302092212775.png)
+
