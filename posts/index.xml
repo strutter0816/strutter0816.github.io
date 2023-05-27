@@ -4,7 +4,15 @@
         <link>https://strutter0816.github.io/posts/</link>
         <description>All Posts | Strutter&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
-            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sat, 31 Dec 2022 17:54:40 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sun, 19 Mar 2023 19:08:49 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Free_time</title>
+    <link>https://strutter0816.github.io/free_time/</link>
+    <pubDate>Sun, 19 Mar 2023 19:08:49 &#43;0800</pubDate>
+    <author>Leonard</author>
+    <guid>https://strutter0816.github.io/free_time/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>C&#43;&#43; notes</title>
     <link>https://strutter0816.github.io/cpp/</link>
     <pubDate>Sat, 31 Dec 2022 17:54:40 &#43;0800</pubDate>

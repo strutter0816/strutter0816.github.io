@@ -2,8 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://strutter0816.github.io/cpp/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://strutter0816.github.io/categories/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://strutter0816.github.io/categories/</loc><lastmod>2023-03-19T19:08:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://strutter0816.github.io/zh-cn/categories/"
@@ -12,9 +11,9 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/categories/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/categories/cpp/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://strutter0816.github.io/tags/cpp-tutorial/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://strutter0816.github.io/posts/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://strutter0816.github.io/free_time/</loc><lastmod>2023-03-19T19:08:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://strutter0816.github.io/categories/life/</loc><lastmod>2023-03-19T19:08:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://strutter0816.github.io/posts/</loc><lastmod>2023-03-19T19:08:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://strutter0816.github.io/zh-cn/posts/"
@@ -23,7 +22,7 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/posts/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://strutter0816.github.io/</loc><lastmod>2023-03-19T19:08:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://strutter0816.github.io/zh-cn/"
@@ -32,7 +31,7 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/"
                     /></url><url>
-            <loc>https://strutter0816.github.io/tags/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://strutter0816.github.io/tags/</loc><lastmod>2023-03-19T19:08:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://strutter0816.github.io/zh-cn/tags/"
@@ -41,6 +40,10 @@
                     hreflang="en"
                     href="https://strutter0816.github.io/tags/"
                     /></url><url>
+            <loc>https://strutter0816.github.io/tags/walk_around/</loc><lastmod>2023-03-19T19:08:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://strutter0816.github.io/cpp/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://strutter0816.github.io/categories/cpp/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://strutter0816.github.io/tags/cpp-tutorial/</loc><lastmod>2022-12-31T17:54:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://strutter0816.github.io/about/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
