@@ -68,6 +68,11 @@ return 0;
 ```
 1 2 4 6
 ```
+## 字符串常用函数
+1. String
+- string.find(string a ,pos),a 是子字符串，pos是查找开始的位置
+- string.length()
+- string.strsub(int start,int length) start 是字符串开始的位置，length是子字符串的长度
 ### set 使用迭代器进行遍历输出
 ```cpp
  set<string> country;
@@ -161,3 +166,5 @@ while True:
     except: #读到文件末尾抛出异常结束循环  
         break  
 ```
+
+
