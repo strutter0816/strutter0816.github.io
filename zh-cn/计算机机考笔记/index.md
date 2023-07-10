@@ -10,6 +10,19 @@ int main(){
   return 0 ;
 }
 ```
+```c
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+#include <algorithm>
+#include <iostream>
+#include <queue>
+#include <stack>
+#include <vector>
+#include <string>
+```
 ## C/C++ %s %d %u 基本用法
 %d              十进制有符号整数 
 %u              十进制
