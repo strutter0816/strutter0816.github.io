@@ -4,7 +4,15 @@
         <link>https://strutter0816.github.io/zh-cn/posts/</link>
         <description>所有文章 | Strutter&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
-            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Wed, 05 Jul 2023 19:26:05 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sun, 17 Sep 2023 15:34:32 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>C&#43;&#43;指针和Java中引用</title>
+    <link>https://strutter0816.github.io/zh-cn/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8/</link>
+    <pubDate>Sun, 17 Sep 2023 15:34:32 &#43;0800</pubDate>
+    <author>Leonard</author>
+    <guid>https://strutter0816.github.io/zh-cn/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>机考笔记</title>
     <link>https://strutter0816.github.io/zh-cn/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%BA%E8%80%83%E7%AC%94%E8%AE%B0/</link>
     <pubDate>Wed, 05 Jul 2023 19:26:05 &#43;0800</pubDate>
