@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>面向对象编程 - Strutter&#39;s Blog</title><meta name="Description" content="This is my Blog"><meta property="og:title" content="面向对象编程" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" /><meta property="og:image" content="https://strutter0816.github.io/earth.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-27T14:50:35+08:00" />
+<meta property="article:modified_time" content="2023-11-27T14:50:35+08:00" /><meta property="og:site_name" content="Strutter&#39;s Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://strutter0816.github.io/earth.png"/>
+
+<meta name="twitter:title" content="面向对象编程"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="我的网站">
+<meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/earth.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" /><link rel="prev" href="https://strutter0816.github.io/zh-cn/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "面向对象编程",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/strutter0816.github.io\/zh-cn\/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B\/"
+        },"genre": "posts","wordcount":  1621 ,
+        "url": "https:\/\/strutter0816.github.io\/zh-cn\/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B\/","datePublished": "2023-11-27T14:50:35+08:00","dateModified": "2023-11-27T14:50:35+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Leonard"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-cn/" title="Strutter&#39;s Blog"><span class="header-title-pre">⭐</span>Strutter&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 类别 </a><a class="menu-item" href="/zh-cn/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-cn/" title="Strutter&#39;s Blog"><span class="header-title-pre">⭐</span>Strutter&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/zh-cn/posts/" title="">文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">类别</a><a class="menu-item" href="/zh-cn/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">面向对象编程</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Leonard</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>计算机</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-27">2023-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1621 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;<span id="/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" class="leancloud_visitors" data-flag-title="面向对象编程">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#三大特性">三大特性</a></li>
+    <li><a href="#类图">类图</a>
+      <ul>
+        <li><a href="#泛化关系">泛化关系</a></li>
+        <li><a href="#实现关系">实现关系</a></li>
+        <li><a href="#聚合关系">聚合关系</a></li>
+        <li><a href="#组合关系">组合关系</a></li>
+        <li><a href="#关联关系">关联关系</a></li>
+        <li><a href="#依赖关系">依赖关系</a></li>
+      </ul>
+    </li>
+    <li><a href="#设计原则">设计原则</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#单一责任原则">单一责任原则</a></li>
+            <li><a href="#开放封闭原则">开放封闭原则</a></li>
+            <li><a href="#3-里氏替换原则">3. 里氏替换原则</a></li>
+            <li><a href="#4-接口分离原则">4. 接口分离原则</a></li>
+            <li><a href="#5-依赖倒置原则">5. 依赖倒置原则</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="三大特性">三大特性</h2>
+<ul>
+<li>
+<p>封装</p>
+<p>利用抽象数据类型将数据和基于数据的操作封装在一起，使其构成一个不可分割的独立实体。数据被保护在抽象数据类型的内部，尽可能地隐藏内部的细节，只保留一些对外的接口使其与外部发生联系。用户无需关心对象内部的细节，但可以通过对象对外提供的接口来访问该对象。</p>
+</li>
+<li>
+<p>继承</p>
+<p>is-a的关系 继承关系，例如 Cat 和 Animal 就是一种 IS-A 关系，因此 Cat 可以继承自 Animal，从而获得 Animal 非 private 的属性和方法。</p>
+<blockquote>
+<p>is-a/has&ndash;a/like-a</p>
+<ul>
+<li>is-a 继承关系 A is a B 说明A是B的一个子类</li>
+<li>has-a 表示从属关系A has a B，那么B就是A的组成部分。 同一种类的对象，通过它们的属性的不同值来区别。</li>
+<li>like-a，顾名思义，像一个，代表组合关系。 如果A like a B，那么B就是A的接口。</li>
+</ul>
+</blockquote>
+<p>Cat 可以当做 Animal 来使用，也就是说可以使用 Animal 引用 Cat 对象。父类引用指向子类对象称为 <strong>向上转型</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Animal</span> <span class="n">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cat</span><span class="o">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>多态</p>
+<p>多态分为编译时多态和运行时多态：</p>
+<ul>
+<li>编译时多态主要指方法的重载</li>
+<li>运行时多态指程序中定义的对象引用所指向的具体类型在运行期间才确定</li>
+</ul>
+<p>运行时多态有三个条件：</p>
+<ul>
+<li>
+<p>继承</p>
+</li>
+<li>
+<p>覆盖（重写）</p>
+</li>
+<li>
+<p>向上转型</p>
+<p>下面的代码中，乐器类（Instrument）有两个子类：Wind 和 Percussion，它们都覆盖了父类的 play() 方法，并且在 main() 方法中使用父类 Instrument 来引用 Wind 和 Percussion 对象。在 Instrument 引用调用 play() 方法时，会执行实际引用对象所在类的 play() 方法，而不是 Instrument 类的方法。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Instrument</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">play</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Instument is playing...&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Wind</span> <span class="kd">extends</span> <span class="n">Instrument</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">play</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Wind is playing...&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Percussion</span> <span class="kd">extends</span> <span class="n">Instrument</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">play</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Percussion is playing...&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Music</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="o">&lt;</span><span class="n">Instrument</span><span class="o">&gt;</span> <span class="n">instruments</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">instruments</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Wind</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">instruments</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Percussion</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="o">(</span><span class="n">Instrument</span> <span class="n">instrument</span> <span class="o">:</span> <span class="n">instruments</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">instrument</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">Wind</span> <span class="n">is</span> <span class="n">playing</span><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Percussion</span> <span class="n">is</span> <span class="n">playing</span><span class="o">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+<h2 id="类图">类图</h2>
+<h3 id="泛化关系">泛化关系</h3>
+<p>用来描述继承关系，在 Java 中使用 extends 关键字。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c0874e0a-dba3-467e-9c86-dd9313e0843e.jpg"
+        data-srcset="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c0874e0a-dba3-467e-9c86-dd9313e0843e.jpg, https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c0874e0a-dba3-467e-9c86-dd9313e0843e.jpg 1.5x, https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c0874e0a-dba3-467e-9c86-dd9313e0843e.jpg 2x"
+        data-sizes="auto"
+        alt="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c0874e0a-dba3-467e-9c86-dd9313e0843e.jpg"
+        title="img" /></p>
+<h3 id="实现关系">实现关系</h3>
+<p>用来实现一个接口，在 Java 中使用 implements 关键字。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/83d466bd-946b-4430-854a-cf7b0696d4c8.jpg"
+        data-srcset="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/83d466bd-946b-4430-854a-cf7b0696d4c8.jpg, https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/83d466bd-946b-4430-854a-cf7b0696d4c8.jpg 1.5x, https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/83d466bd-946b-4430-854a-cf7b0696d4c8.jpg 2x"
+        data-sizes="auto"
+        alt="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/83d466bd-946b-4430-854a-cf7b0696d4c8.jpg"
+        title="img" /></p>
+<h3 id="聚合关系">聚合关系</h3>
+<p>表示整体由部分组成，但是整体和部分不是强依赖的，整体不存在了部分还是会存在。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a0ce43b7-afa8-4397-a96e-5c12a070f2ae.jpg"
+        data-srcset="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a0ce43b7-afa8-4397-a96e-5c12a070f2ae.jpg, https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a0ce43b7-afa8-4397-a96e-5c12a070f2ae.jpg 1.5x, https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a0ce43b7-afa8-4397-a96e-5c12a070f2ae.jpg 2x"
+        data-sizes="auto"
+        alt="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a0ce43b7-afa8-4397-a96e-5c12a070f2ae.jpg"
+        title="img" /></p>
+<h3 id="组合关系">组合关系</h3>
+<p>和聚合不同，组合中整体和部分是强依赖的，整体不存在了部分也不存在了。比如公司和部门，公司没了部门就不存在了。但是公司和员工就属于聚合关系了，因为公司没了员工还在。</p>
+<h3 id="关联关系">关联关系</h3>
+<p>表示不同类对象之间有关联，这是一种静态关系，与运行过程的状态无关，在最开始就可以确定。因此也可以用 1 对 1、多对 1、多对多这种关联关系来表示。比如学生和学校就是一种关联关系，一个学校可以有很多学生，但是一个学生只属于一个学校，因此这是一种多对一的关系，在运行开始之前就可以确定。</p>
+<h3 id="依赖关系">依赖关系</h3>
+<p>和关联关系不同的是，依赖关系是在运行过程中起作用的。A 类和 B 类是依赖关系主要有三种形式：</p>
+<ul>
+<li>A 类是 B 类方法的局部变量；</li>
+<li>A 类是 B 类方法的参数；</li>
+<li>A 类向 B 类发送消息，从而影响 B 类发生变化。</li>
+</ul>
+<h2 id="设计原则">设计原则</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">简写</th>
+<th style="text-align:center">全拼</th>
+<th style="text-align:center">中文翻译</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SRP</td>
+<td style="text-align:center">The Single Responsibility Principle</td>
+<td style="text-align:center">单一责任原则</td>
+</tr>
+<tr>
+<td style="text-align:center">OCP</td>
+<td style="text-align:center">The Open Closed Principle</td>
+<td style="text-align:center">开放封闭原则</td>
+</tr>
+<tr>
+<td style="text-align:center">LSP</td>
+<td style="text-align:center">The Liskov Substitution Principle</td>
+<td style="text-align:center">里氏替换原则</td>
+</tr>
+<tr>
+<td style="text-align:center">ISP</td>
+<td style="text-align:center">The Interface Segregation Principle</td>
+<td style="text-align:center">接口分离原则</td>
+</tr>
+<tr>
+<td style="text-align:center">DIP</td>
+<td style="text-align:center">The Dependency Inversion Principle</td>
+<td style="text-align:center">依赖倒置原则</td>
+</tr>
+</tbody>
+</table>
+<h4 id="单一责任原则">单一责任原则</h4>
+<blockquote>
+<p>修改一个类的原因应该只有一个。</p>
+</blockquote>
+<p>换句话说就是让一个类只负责一件事，当这个类需要做过多事情的时候，就需要分解这个类。</p>
+<p>如果一个类承担的职责过多，就等于把这些职责耦合在了一起，一个职责的变化可能会削弱这个类完成其它职责的能力。</p>
+<h4 id="开放封闭原则">开放封闭原则</h4>
+<blockquote>
+<p>类应该对扩展开放，对修改关闭。</p>
+</blockquote>
+<p>扩展就是添加新功能的意思，因此该原则要求在添加新功能时不需要修改代码。</p>
+<p>符合开闭原则最典型的设计模式是装饰者模式，它可以动态地将责任附加到对象上，而不用去修改类的代码。</p>
+<h4 id="3-里氏替换原则">3. 里氏替换原则</h4>
+<blockquote>
+<p>子类对象必须能够替换掉所有父类对象。</p>
+</blockquote>
+<p>继承是一种 IS-A 关系，子类需要能够当成父类来使用，并且需要比父类更特殊。</p>
+<p>如果不满足这个原则，那么各个子类的行为上就会有很大差异，增加继承体系的复杂度。</p>
+<h4 id="4-接口分离原则">4. 接口分离原则</h4>
+<blockquote>
+<p>不应该强迫客户依赖于它们不用的方法。</p>
+</blockquote>
+<p>因此使用多个专门的接口比使用单一的总接口要好。</p>
+<h4 id="5-依赖倒置原则">5. 依赖倒置原则</h4>
+<blockquote>
+<p>高层模块不应该依赖于低层模块，二者都应该依赖于抽象；
+抽象不应该依赖于细节，细节应该依赖于抽象。</p>
+</blockquote>
+<p>高层模块包含一个应用程序中重要的策略选择和业务模块，如果高层模块依赖于低层模块，那么低层模块的改动就会直接影响到高层模块，从而迫使高层模块也需要改动。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-11-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" data-title="面向对象编程" data-via="xingyu020816"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Tumblr" data-sharer="tumblr" data-url="https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" data-title="面向对象编程"><i class="fab fa-tumblr fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Reddit" data-sharer="reddit" data-url="https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-cn/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-cn/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8/" class="prev" rel="prev" title="C&#43;&#43;指针和Java中引用"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>C++指针和Java中引用</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.106.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-cn/" target="_blank">Leonard</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/valine/Valine.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"R3Ugpz8d1HDXc6C7uW4GsXCk-gzGzoHsz","appKey":"1tVRnvxxLvHcqY28jVmoCT5T","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"visitor":true}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/zh-cn/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

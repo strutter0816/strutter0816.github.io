@@ -4,7 +4,15 @@
         <link>https://strutter0816.github.io/zh-cn/posts/</link>
         <description>所有文章 | Strutter&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xingyu020816@gmail.com (Leonard)</managingEditor>
-            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Sun, 17 Sep 2023 15:34:32 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>xingyu020816@gmail.com (Leonard)</webMaster><lastBuildDate>Mon, 27 Nov 2023 14:50:35 &#43;0800</lastBuildDate><atom:link href="https://strutter0816.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>面向对象编程</title>
+    <link>https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</link>
+    <pubDate>Mon, 27 Nov 2023 14:50:35 &#43;0800</pubDate>
+    <author>Leonard</author>
+    <guid>https://strutter0816.github.io/zh-cn/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>C&#43;&#43;指针和Java中引用</title>
     <link>https://strutter0816.github.io/zh-cn/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8/</link>
     <pubDate>Sun, 17 Sep 2023 15:34:32 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
     <pubDate>Fri, 23 Dec 2022 18:38:20 &#43;0800</pubDate>
     <author>Leonard</author>
     <guid>https://strutter0816.github.io/zh-cn/ielts_speaking/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>雅思写作</title>
-    <link>https://strutter0816.github.io/zh-cn/ielts_writing/</link>
-    <pubDate>Mon, 12 Dec 2022 22:54:28 &#43;0800</pubDate>
-    <author>Leonard</author>
-    <guid>https://strutter0816.github.io/zh-cn/ielts_writing/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
