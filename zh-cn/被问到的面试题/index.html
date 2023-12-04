@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/strutter0816.github.io\/zh-cn\/%E8%A2%AB%E9%97%AE%E5%88%B0%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98\/"
-        },"genre": "posts","keywords": "面试","wordcount":  1416 ,
+        },"genre": "posts","keywords": "面试","wordcount":  1986 ,
         "url": "https:\/\/strutter0816.github.io\/zh-cn\/%E8%A2%AB%E9%97%AE%E5%88%B0%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98\/","datePublished": "2023-12-04T19:34:38+08:00","dateModified": "2023-12-04T19:34:38+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -108,8 +108,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">被问到（倒）的面试题以及疑难杂症</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Leonard</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E5%B7%A5%E4%BD%9C/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>工作</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-04">2023-12-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1416 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/zh-cn/%E8%A2%AB%E9%97%AE%E5%88%B0%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/" class="leancloud_visitors" data-flag-title="被问到（倒）的面试题以及疑难杂症">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-04">2023-12-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1986 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;<span id="/zh-cn/%E8%A2%AB%E9%97%AE%E5%88%B0%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/" class="leancloud_visitors" data-flag-title="被问到（倒）的面试题以及疑难杂症">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
@@ -119,18 +119,20 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#重载和重写的区别">重载和重写的区别</a></li>
+    <li><a href="#hashmap的put实现流程">HashMap的put实现流程</a></li>
+    <li><a href="#mysql的数据结构和索引">Mysql的数据结构和索引</a></li>
+    <li><a href="#java的抽象类和接口类的区别">java的抽象类和接口类的区别</a>
       <ul>
         <li><a href="#抽象类abstract-class">抽象类（Abstract Class）：</a></li>
         <li><a href="#接口interface">接口（Interface）：</a></li>
         <li><a href="#区别总结">区别总结：</a></li>
       </ul>
     </li>
+    <li><a href="#c有没有java中继承和实现一说">C++有没有java中继承和实现一说</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><ol>
-<li>
-<p>重载和重写的区别</p>
+            </div><div class="content" id="content"><h2 id="重载和重写的区别">重载和重写的区别</h2>
 <ul>
 <li>
 <p>重写(Overriding)是”外壳不变，核心重写”,即在<strong>子类存在方法与父类的方法的名字相同,<strong>而且</strong>参数的个数与类型一样,返回值也一样</strong>的方法。</p>
@@ -139,9 +141,7 @@
 <p>重载(overloading) 是**在一个类里面，方法名字相同，而参数不同。**返回类型可以相同也可以不同。</p>
 </li>
 </ul>
-</li>
-<li>
-<p>HashMap的put实现流程</p>
+<h2 id="hashmap的put实现流程">HashMap的put实现流程</h2>
 <ol>
 <li><strong>计算Key的哈希值：</strong> 首先，HashMap会调用Key的<code>hashCode()</code>方法来获取Key的哈希码（hash code）。</li>
 <li><strong>计算哈希值的索引位置：</strong> 使用哈希值和HashMap的容量进行计算，确定存储位置。具体计算方法是取哈希值对容量取余数，这个余数就是键值对应的数组索引。</li>
@@ -149,9 +149,7 @@
 <li><strong>插入键值对：</strong> 如果在特定位置没有冲突，或者已经通过链表或树解决了冲突，就将键值对插入到相应的位置。</li>
 <li><strong>检查是否需要进行扩容：</strong> 如果插入键值对后，HashMap的大小超过了某个阈值，就会触发HashMap的扩容操作，以保持哈希表的负载因子在可接受范围内。</li>
 </ol>
-</li>
-<li>
-<p>Mysql的数据结构和索引</p>
+<h2 id="mysql的数据结构和索引">Mysql的数据结构和索引</h2>
 <ol>
 <li>最基本的是表，表是由行列组成的，每一行表示一条记录，每一列表示记录中的一个属性。表的数据结构可以简单描述为二维表格、</li>
 <li>索引是一种用于加速数据检索的数据结构
@@ -163,9 +161,7 @@
 </ol>
 </li>
 </ol>
-</li>
-<li>
-<p>java的抽象类和接口类的区别</p>
+<h2 id="java的抽象类和接口类的区别">java的抽象类和接口类的区别</h2>
 <h3 id="抽象类abstract-class">抽象类（Abstract Class）：</h3>
 <ol>
 <li>
@@ -197,15 +193,15 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">javaCopy codeabstract class Animal {
-</span></span><span class="line"><span class="cl">    String name;
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">javaCopy</span> <span class="n">codeabstract</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    abstract void makeSound(); // 抽象方法
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    void eat() {
-</span></span><span class="line"><span class="cl">        System.out.println(&#34;Animal is eating.&#34;);
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">makeSound</span><span class="o">();</span> <span class="c1">// 抽象方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">eat</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Animal is eating.&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
@@ -239,13 +235,13 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">javaCopy codeinterface Animal {
-</span></span><span class="line"><span class="cl">    void makeSound(); // 抽象方法
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    default void eat() {
-</span></span><span class="line"><span class="cl">        System.out.println(&#34;Animal is eating.&#34;);
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">javaCopy</span> <span class="n">codeinterface</span> <span class="n">Animal</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">makeSound</span><span class="o">();</span> <span class="c1">// 抽象方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span> <span class="kt">void</span> <span class="nf">eat</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Animal is eating.&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
@@ -257,8 +253,64 @@
 <li><strong>成员变量：</strong> 抽象类可以包含成员变量，而接口只能包含常量。</li>
 <li><strong>默认实现：</strong> 接口中可以包含默认实现的方法（使用 <code>default</code> 关键字），而抽象类中的方法默认需要在子类中实现。</li>
 </ol>
-</li>
-</ol></div><div class="post-footer" id="post-footer">
+<h2 id="c有没有java中继承和实现一说">C++有没有java中继承和实现一说</h2>
+<p>在C++中，有继承（inheritance）的概念，但和Java一样，C++中的继承并没有像Java那样的&quot;implements&quot;关键字，而是使用&quot;派生类（子类）继承基类（父类）&ldquo;的方式。</p>
+<p>C++中的继承分为两种主要类型：</p>
+<ol>
+<li>
+<p><strong>公有继承（Public Inheritance）：</strong> 使用<code>public</code>关键字表示。在公有继承中，派生类（子类）可以访问基类（父类）的公有成员和受保护成员。这种继承关系符合&quot;is-a&quot;关系。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">cppCopy</span> <span class="n">code</span><span class="c1">// 基类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">Base</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">publicMember</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">protectedMember</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">privateMember</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 派生类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">Derived</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Base</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Derived 可以访问 Base 的 publicMember 和 protectedMember
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>私有继承（Private Inheritance）：</strong> 使用<code>private</code>关键字表示。在私有继承中，基类的公有和保护成员在派生类中都变成了私有成员。这种继承关系通常用于实现&quot;has-a&quot;关系，而不是&quot;is-a&quot;关系。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">cppCopy</span> <span class="n">codeclass</span> <span class="nl">Derived</span> <span class="p">:</span> <span class="k">private</span> <span class="n">Base</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Base 的所有成员在 Derived 中都变为私有成员
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>在C++中，类可以继承多个类，这被称为多重继承。多重继承可能导致菱形继承问题，为了解决这个问题，C++引入了虚继承（virtual inheritance）。虚继承允许在继承体系中共享基类的实例，以避免派生类中包含多个实例的问题。</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
