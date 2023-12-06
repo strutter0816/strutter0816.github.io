@@ -82,19 +82,19 @@
 
 用来描述继承关系，在 Java 中使用 extends 关键字。
 
-![img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c0874e0a-dba3-467e-9c86-dd9313e0843e.jpg)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062246134.jpeg)
 
 ### 实现关系
 
 用来实现一个接口，在 Java 中使用 implements 关键字。
 
-![img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/83d466bd-946b-4430-854a-cf7b0696d4c8.jpg)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062246998.jpeg)
 
 ### 聚合关系
 
 表示整体由部分组成，但是整体和部分不是强依赖的，整体不存在了部分还是会存在。
 
-![img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a0ce43b7-afa8-4397-a96e-5c12a070f2ae.jpg)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062246648.jpeg)
 
 ### 组合关系
 

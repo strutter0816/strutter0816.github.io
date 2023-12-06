@@ -242,9 +242,9 @@ TCP（传输控制协议）是面向连接的传输层协议。两部分组成 �
 
 
 
-![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190503210424740-1764008697.jpg)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062247556.jpeg)
 
-![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190503231436105-1355677452.png)
+<img src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062249215.png" alt="img" style="zoom:80%;" />
 
 ### 为什么连接的时候是三次握手，关闭的时候却是四次挥手？
 
@@ -268,21 +268,21 @@ TCP/IP协议簇中无连接的运输层协议。两部分组成    首部和数�
 
 请求报文：请求行 首部行 实体主体
 
-![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190504230113716-231823746.png)
+<img src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062247289.png" alt="img" style="zoom:150%;" />
 
 HTTP响应报文格式  ：状态行 首部行 实体主体
 
-![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190505001517048-1489396333.png)
+<img src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062249033.png" alt="img" style="zoom:150%;" />
 
 ## HTTP请求方法
 
 HTTP请求报文例子中，我们可以看到请求方法是GET，这表示请求读取由URL所标志的信息，除了GET，还有其他几种常用的方法。
 
-![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190505003337425-1910585386.png)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062248430.png)
 
 在HTTP响应报文的例子中，我们可以看到状态码是200，表示响应成功。下表是其他状态码，总共5大类，33种。
 
-![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190505004242552-665354194.png)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062249679.png)
 
 ## HTTP和HTTPS的区别
 

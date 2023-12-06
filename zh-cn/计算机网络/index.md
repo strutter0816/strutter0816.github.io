@@ -23,5 +23,5 @@
 
 　　客户端请求与服务器进行连接的时候，根据**服务器的域名或者IP地址，加上端口号**，打开一个套接字。当**服务器接受连接后，服务器和客户端之间的通信就像输入输出流一样进行操作**。
 
-![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190505145914692-1580218673.png)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062246635.png)
 

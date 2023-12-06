@@ -15,7 +15,7 @@
 
 **在java种只有引用类型才有引用**
 
-![img](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/27/163a081657aafcc8~tplv-t2oaga2asx-jj-mark:3024:0:0:0:q75.awebp)
+![img](https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312062250285.webp)
 
 在定义变量时，引用没有实体，不占空间，只有在变量赋值时，引用才有实际值
 
