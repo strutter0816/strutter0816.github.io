@@ -216,3 +216,9 @@ public class ReentrantLockExample {
 - **Condition：** `ReentrantLock` 还提供了 `Condition` 对象，可以用于实现更灵活的线程通信。
 - **可中断性：** `ReentrantLock` 支持可中断的获取锁操作，线程可以通过 `lockInterruptibly` 方法中断等待锁的过程。
 
+## TCP/IP 三次握手和四次挥手
+
+![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190503210424740-1764008697.jpg)
+
+![img](https://img2018.cnblogs.com/blog/1217276/201905/1217276-20190503231436105-1355677452.png)
+
