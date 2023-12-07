@@ -40,7 +40,7 @@
 
   下图是一个学生选课的 ER 图，每个学生可以选若干门课程，同一门课程也可以被若干人选择，所以它们之间的关系是多对多（M: N）。另外，还有其他两种实体之间的关系是：1 对 1（1:1）、1 对多（1: N）。
 
-  ![学生与课程之间联系的E-R图](https://oss.javaguide.cn/github/javaguide/csdn/c745c87f6eda9a439e0eea52012c7f4a.png)
+  <img src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312071401785.png" alt="学生与课程之间联系的E-R图" style="zoom:80%;" />
 
   
 
