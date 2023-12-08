@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/strutter0816.github.io\/zh-cn\/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8\/"
-        },"genre": "posts","keywords": "编程语言","wordcount":  519 ,
+        },"genre": "posts","keywords": "编程语言","wordcount":  6599 ,
         "url": "https:\/\/strutter0816.github.io\/zh-cn\/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8\/","datePublished": "2023-09-17T15:34:32+08:00","dateModified": "2023-09-17T15:34:32+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -108,8 +108,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">C++指针和Java中引用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-cn/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Leonard</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>计算机</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-17">2023-09-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 519 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id="/zh-cn/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8/" class="leancloud_visitors" data-flag-title="C&#43;&#43;指针和Java中引用">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-17">2023-09-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 6599 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 14 分钟&nbsp;<span id="/zh-cn/c-%E6%8C%87%E9%92%88%E5%92%8Cjava%E4%B8%AD%E5%BC%95%E7%94%A8/" class="leancloud_visitors" data-flag-title="C&#43;&#43;指针和Java中引用">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
@@ -123,6 +123,23 @@
     <li><a href="#引用">引用</a></li>
     <li><a href="#两者联系">两者联系</a></li>
     <li><a href="#区别">区别</a></li>
+    <li><a href="#java的值传递和引用传递">Java的值传递和引用传递</a>
+      <ul>
+        <li><a href="#形参和实参">形参和实参</a></li>
+        <li><a href="#java的数据类型">Java的数据类型</a></li>
+        <li><a href="#jvm内存的划分及职能">JVM内存的划分及职能</a>
+          <ul>
+            <li><a href="#虚拟机栈">虚拟机栈</a></li>
+            <li><a href="#堆">堆</a></li>
+            <li><a href="#程序计数器">程序计数器</a></li>
+            <li><a href="#方法区">方法区</a></li>
+            <li><a href="#本地方法栈">本地方法栈</a></li>
+          </ul>
+        </li>
+        <li><a href="#数据如何在内存中存储">数据如何在内存中存储</a></li>
+        <li><a href="#值传递和引用传递">值传递和引用传递</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><hr>
@@ -151,7 +168,541 @@
 <li>java的引用，声明变量时(不赋值)，不占空间。(原因见引用类型内存分配)</li>
 <li>java的引用初始值为 null。c的指针是int，如不初始化指针，那它的值就不是固定的了。</li>
 <li>java的引用不可以计算。c的指针是int，他可以计算，如++或&ndash;，所以经常用指针来代替数组下标。</li>
-</ol></div><div class="post-footer" id="post-footer">
+</ol>
+<h2 id="java的值传递和引用传递">Java的值传递和引用传递</h2>
+<h3 id="形参和实参">形参和实参</h3>
+<ol>
+<li>形参：<strong>方法被调用时需要传递进来的参数</strong>，如：func(int a)中的a，它只有在func被调用期间a才有意义，也就是会被分配内存空间，在方法func执行完成后，a就会被销毁释放空间，也就是不存在了</li>
+<li>实参：<strong>方法被调用时是传入的实际值</strong>，它在方法被调用前就已经被初始化并且在方法被调用时传入。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">func</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span> <span class="o">){</span><span class="c1">//a是形参
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">a</span><span class="o">=</span><span class="n">20</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"> <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl"> <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="n">10</span><span class="o">;</span><span class="c1">//实参
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">func</span><span class="o">(</span><span class="n">a</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="java的数据类型">Java的数据类型</h3>
+<p>数据类型，是编程语言中对内存的一种抽象表达方式，我们知道程序是由<strong>代码文件和静态资源</strong>组成。</p>
+<p>程序被运行前，这些代码存在在硬盘里，程序开始运行，这些代码会被转成计算机能识别的内容放到内存中被执行。</p>
+<blockquote>
+<p>数据类型实质上是用来定义编程语言中相同类型的数据的存储形式，也就是决定了如何将代表这些值的位存储到计算机的内存中</p>
+</blockquote>
+<p>数据在内存中的存储，是根据数据类型来划定存储形式和存储位置的。
+那么
+Java的数据类型有哪些？</p>
+<blockquote>
+<ol>
+<li>基本类型：编程语言中内置的最小粒度的数据类型。它包括四大类八种类型：</li>
+</ol>
+<blockquote>
+<p>4种整数类型：byte、short、int、long
+2种浮点数类型：float、double
+1种字符类型：char
+1种布尔类型：boolean</p>
+</blockquote>
+<ol>
+<li>引用类型：引用也叫句柄，引用类型，是编程语言中定义的在句柄中存放着<strong>实际内容所在地址的地址值的一种数据形式</strong>。它主要包括：</li>
+</ol>
+<blockquote>
+<p>类
+接口
+数组</p>
+</blockquote>
+</blockquote>
+<p>有了数据类型，JVM对程序数据的管理就规范化了，不同的数据类型，它的存储形式和位置是不一样的，要想知道JVM是怎么存储各种类型的数据，就得先了解JVM的内存划分以及每部分的职能。</p>
+<h3 id="jvm内存的划分及职能">JVM内存的划分及职能</h3>
+<p>Java语言本身是不能操作内存的，它的一切都是交给JVM来管理和控制的，因此Java内存区域的划分也就是JVM的区域划分，在说JVM的内存划分之前，我们先来看一下Java程序的执行过程，如下图：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072232249.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072232249.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072232249.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072232249.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072232249.png"
+        title="img" /></p>
+<p>Java代码被编译器编译成字节码之后，JVM开辟一片内存空间（也叫运行时数据区），通过类加载器加到到运行时数据区来存储程序执行期间需要用到的数据和相关信息，在这个数据区中，它由以下几部分组成：</p>
+<ol>
+<li>
+<h4 id="虚拟机栈">虚拟机栈</h4>
+<p>虚拟机栈是Java方法执行的内存模型，栈中存放着栈帧，每个栈帧分别对应一个被调用的方法，方法的调用过程对应栈帧在虚拟机中入栈到出栈的过程。</p>
+<p>栈是线程私有的，也就是线程之间的栈是隔离的；<strong>当程序中某个线程开始执行一个方法时就会相应的创建一个栈帧并且入栈（位于栈顶），在方法结束后，栈帧出栈。</strong></p>
+<p>下图表示了一个Java栈的模型以及栈帧的组成：
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072235768.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072235768.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072235768.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072235768.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072235768.png"
+        title="img" />
+<strong>栈帧</strong>:是用于支持虚拟机进行方法调用和方法执行的数据结构，它是虚拟机运行时数据区中的虚拟机栈的栈元素。</p>
+<p>每个栈帧中包括：</p>
+<ol>
+<li><strong>局部变量表</strong>:用来存储方法中的局部变量（非静态变量、函数形参）。当变量为基本数据类型时，直接存储值，当变量为引用类型时，存储的是指向具体对象的引用。</li>
+<li><strong>操作数栈</strong>:Java虚拟机的解释执行引擎被称为&quot;基于栈的执行引擎&quot;，其中所指的栈就是指操作数栈。</li>
+<li><strong>指向运行时常量池的引用</strong>:存储程序执行时可能用到常量的引用。</li>
+<li><strong>方法返回地址</strong>:存储方法执行完成后的返回地址。</li>
+</ol>
+</li>
+<li>
+<h4 id="堆">堆</h4>
+<p>堆是用来存储对象本身和数组的，在JVM中只有一个堆，因此，堆是被所有线程共享的。</p>
+</li>
+<li>
+<h4 id="程序计数器">程序计数器</h4>
+<p>线程私有的。
+记录着当前线程所执行的字节码的行号指示器，在程序运行过程中，字节码解释器工作时就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、异常处理、线程恢复等基础功能都需要依赖计数器完成。</p>
+</li>
+<li>
+<h4 id="方法区">方法区</h4>
+<p>方法区是一块所有线程共享的内存逻辑区域，在JVM中只有一个方法区，用来存储一些线程可共享的内容，它是线程安全的，多个线程同时访问方法区中同一个内容时，只能有一个线程装载该数据，其它线程只能等待。</p>
+<p>方法区可存储的内容有：类的全路径名、类的直接超类的权全限定名、类的访问修饰符、类的类型（类或接口）、类的直接接口全限定名的有序列表、常量池（字段，方法信息，静态变量，类型引用（class））等。</p>
+</li>
+<li>
+<h4 id="本地方法栈">本地方法栈</h4>
+<p>本地方法栈的功能和虚拟机栈是基本一致的，并且也是线程私有的，它们的区别在于虚拟机栈是为执行Java方法服务的，而本地方法栈是为执行本地方法服务的。</p>
+</li>
+</ol>
+<h3 id="数据如何在内存中存储">数据如何在内存中存储</h3>
+<p>从上面程序运行图我们可以看到，JVM在程序运行时的内存分配有三个地方：</p>
+<ul>
+<li>堆</li>
+<li>栈</li>
+<li>静态方法区</li>
+<li>常量区</li>
+</ul>
+<p>每个存储区域都有自己的内存分配策略：</p>
+<ul>
+<li>堆式：</li>
+<li>栈式</li>
+<li>静态</li>
+</ul>
+<p>Java中的数据类型有基本数据类型和引用数据类型，那么这些数据的存储都使用哪一种策略呢？
+这里要分以下的情况进行探究：</p>
+<p><strong>1. 基本数据类型的存储：</strong></p>
+<ul>
+<li>
+<p>A. 基本数据类型的局部变量</p>
+<p>定义基本数据类型的局部变量以及数据都是直接存储在内存中的栈上，也就是前面说到的**“虚拟机栈”**，数据本身的值就是存储在栈空间里面。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081523627.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081523627.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081523627.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081523627.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081523627.png"
+        title="img" /></p>
+<p>如上图，在方法内定义的变量直接存储在栈中，如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">age</span><span class="o">=</span><span class="n">50</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">weight</span><span class="o">=</span><span class="n">50</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">grade</span><span class="o">=</span><span class="n">6</span><span class="o">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>当我们写“int age=50；”，其实是分为两步的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">age</span><span class="o">;</span><span class="c1">//定义变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">age</span><span class="o">=</span><span class="n">50</span><span class="o">;</span><span class="c1">//赋值
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>首先JVM创建一个名为age的变量，存于局部变量表中，然后去栈中查找是否存在有字面量值为50的内容，如果有就直接把age指向这个地址，如果没有，JVM会在栈中开辟一块空间来存储“50”这个内容，并且把age指向这个地址。因此我们可以知道：
+<strong>我们声明并初始化基本数据类型的局部变量时，变量名以及字面量值都是存储在栈中，而且是真实的内容。</strong></p>
+<p>我们再来看“int weight=50；”，按照刚才的思路：字面量为50的内容在栈中已经存在，因此weight是直接指向这个地址的。由此可见：<strong>栈中的数据在当前线程下是共享的</strong>。</p>
+<p>那么如果再执行下面的代码呢？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">weight</span><span class="o">=</span><span class="n">40</span><span class="err">；</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>当代码中重新给weight变量进行赋值时，JVM会去栈中寻找字面量为40的内容，发现没有，就会开辟一块内存空间存储40这个内容，并且把weight指向这个地址。由此可知：</p>
+<p><strong>基本数据类型的数据本身是不会改变的，当局部变量重新赋值时，并不是在内存中改变字面量内容，而是重新在栈中寻找已存在的相同的数据，若栈中不存在，则重新开辟内存存新数据，并且把要重新赋值的局部变量的引用指向新数据所在地址。</strong></p>
+</li>
+<li>
+<p>B. 基本数据类型的成员变量</p>
+<p>就是在类体中定义的变量</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072247998.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072247998.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072247998.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072247998.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312072247998.png"
+        title="img" /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="kt">int</span> <span class="n">grade</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//篇幅较长，省略setter getter方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">static</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;run....&#34;</span><span class="o">);</span> 
+</span></span><span class="line"><span class="cl">   <span class="o">};</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//调用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Person</span> <span class="n">per</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同样是局部变量的age、name、grade却被存储到了堆中为per对象开辟的一块空间中。因此可知：<strong>基本数据类型的成员变量名和值都存储于堆中，其生命周期和对象的是一致的。</strong></p>
+</li>
+<li>
+<p>C. 基本数据类型的静态变量</p>
+<p><strong>方法区</strong>用来存储一些共享数据，因此<strong>基本数据类型的静态变量名以及值存储于方法区的运行时常量池中，静态变量随类加载而加载，随类消失而消失</strong></p>
+</li>
+</ul>
+<p><strong>2. 引用数据类型的存储</strong></p>
+<p>堆是用来存储对象本身和数组，而引用（句柄）存放的是实际内容的地址值，因此通过上面的程序运行图，也可以看出，当我们定义一个对象时</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">per</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>实际上，它也是有两个过程：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">per</span><span class="o">;</span><span class="c1">//定义变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">per</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span><span class="c1">//赋值
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>在执行Person per;时，JVM先在虚拟机栈中的变量表中开辟一块内存存放per变量，在执行per=new Person()时，JVM会创建一个Person类的实例对象并在堆中开辟一块内存存储这个实例，同时把实例的地址值赋值给per变量。因此可见：
+<strong>对于引用数据类型的对象/数组，变量名存在栈中，变量值存储的是对象的地址，并不是对象的实际内容。</strong></p>
+<h3 id="值传递和引用传递">值传递和引用传递</h3>
+<blockquote>
+<p><strong>值传递：</strong>
+在方法被调用时，实参通过形参把它的内容副本传入方法内部，此时<strong>形参接收到的内容是实参值的一个拷贝</strong>，因此在<strong>方法内对形参的任何操作，都仅仅是对这个副本的操作，不影响原始值的内容</strong>。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">valueCrossTest</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">,</span><span class="kt">float</span> <span class="n">weight</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;传入的age：&#34;</span><span class="o">+</span><span class="n">age</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;传入的weight：&#34;</span><span class="o">+</span><span class="n">weight</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">age</span><span class="o">=</span><span class="n">33</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">weight</span><span class="o">=</span><span class="n">89</span><span class="o">.</span><span class="na">5f</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;方法内重新赋值后的age：&#34;</span><span class="o">+</span><span class="n">age</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;方法内重新赋值后的weight：&#34;</span><span class="o">+</span><span class="n">weight</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//测试
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="n">25</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">float</span> <span class="n">w</span><span class="o">=</span><span class="n">77</span><span class="o">.</span><span class="na">5f</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">valueCrossTest</span><span class="o">(</span><span class="n">a</span><span class="o">,</span><span class="n">w</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;方法执行后的age：&#34;</span><span class="o">+</span><span class="n">a</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;方法执行后的weight：&#34;</span><span class="o">+</span><span class="n">w</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">传入的age：25
+</span></span><span class="line"><span class="cl">传入的weight：77.5
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">方法内重新赋值后的age：33
+</span></span><span class="line"><span class="cl">方法内重新赋值后的weight：89.5
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">方法执行后的age：25
+</span></span><span class="line"><span class="cl">方法执行后的weight：77.5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>方法内的操作对实参没有影响</p>
+<p>首先程序运行时，<strong>调用mian()方法，此时JVM为main()方法往虚拟机栈中压入一个栈帧，即为当前栈帧</strong>，用来存放main()中的局部变量表(包括参数)、操作栈、方法出口等信息，如a和w都是mian()方法中的局部变量，因此可以断定，a和w是躺着mian方法所在的栈帧中
+如图：
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553657.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553657.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553657.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553657.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553657.png"
+        title="img" />
+而当执行到<strong>valueCrossTest()方法时，JVM也为其往虚拟机栈中压入一个栈，即为当前栈帧</strong>，用来存放valueCrossTest()中的局部变量等信息，因此age和weight是躺着valueCrossTest方法所在的栈帧中，而他们的值是从a和w的值copy了一份副本而得，如图：
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553735.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553735.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553735.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553735.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081553735.png"
+        title="img" />。
+因而可以a和age、w和weight对应的内容是不一致的，所以当在方法内重新赋值时，实际流程如图：
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081554580.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081554580.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081554580.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081554580.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081554580.png"
+        title="img" /></p>
+<p>也就是说，age和weight的改动，只是改变了当前栈帧（valueCrossTest方法所在栈帧)里的内容，当方法执行结束之后，这些局部变量都会被销毁，mian方法所在栈帧重新回到栈顶，成为当前栈帧，再次输出a和w时，依然是初始化时的内容。
+因此：
+<strong>值传递传递的是真实内容的一个副本，对副本的操作不影响原内容，也就是形参怎么变化，不会影响实参对应的内容。</strong></p>
+<blockquote>
+<p><strong>引用传递：</strong>
+”引用”也就是指向真实内容的地址值，在方法调用时，<strong>实参的地址通过方法调用被传递给相应的形参</strong>，在方法体内，形参和实参指向同一内存地址，对形参的操作会影响的真实内容。</p>
+</blockquote>
+<p>举个栗子：
+先定义一个对象：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">age</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAge</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们写个函数测试一下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">PersonCrossTest</span><span class="o">(</span><span class="n">Person</span> <span class="n">person</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;传入的person的name：&#34;</span><span class="o">+</span><span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">person</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;我是张小龙&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;方法内重新赋值后的name：&#34;</span><span class="o">+</span><span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//测试
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Person</span> <span class="n">p</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;我是马化腾&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">.</span><span class="na">setAge</span><span class="o">(</span><span class="n">45</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PersonCrossTest</span><span class="o">(</span><span class="n">p</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;方法执行后的name：&#34;</span><span class="o">+</span><span class="n">p</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">传入的person的name：我是马化腾</span>
+</span></span><span class="line"><span class="cl"><span class="err">方法内重新赋值后的name：我是张小龙</span>
+</span></span><span class="line"><span class="cl"><span class="err">方法执行后的name：我是张小龙</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以看出，person经过personCrossTest()方法的执行之后，内容发生了改变，这印证了上面所说的**“引用传递”**，对形参的操作，改变了实际对象的内容。</p>
+<p>那么，到这里就结题了吗？
+不是的，没那么简单，
+能看得到想要的效果
+是因为刚好选对了例子而已！！！</p>
+<p>下面我们对上面的例子稍作修改，加上一行代码，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">PersonCrossTest</span><span class="o">(</span><span class="n">Person</span> <span class="n">person</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;传入的person的name：&#34;</span><span class="o">+</span><span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">person</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span><span class="c1">//加多此行代码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">person</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;我是张小龙&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;方法内重新赋值后的name：&#34;</span><span class="o">+</span><span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">传入的person的name</span><span class="err">：</span><span class="n">我是马化腾</span>
+</span></span><span class="line"><span class="cl"><span class="n">方法内重新赋值后的name</span><span class="err">：</span><span class="n">我是张小龙</span>
+</span></span><span class="line"><span class="cl"><span class="n">方法执行后的name</span><span class="err">：</span><span class="n">我是马化腾</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>按照上面讲到JVM内存模型可以知道，对象和数组是存储在Java堆区的，而且堆区是共享的，因此程序执行到main（）方法中的下列代码时</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">p</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&#34;我是马化腾&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">.</span><span class="na">setAge</span><span class="o">(</span><span class="n">45</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PersonCrossTest</span><span class="o">(</span><span class="n">p</span><span class="o">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>JVM会在堆内开辟一块内存，用来存储p对象的所有内容，同时在main（）方法所在线程的栈区中创建一个引用p存储堆区中p对象的真实地址，如图：
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081659566.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081659566.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081659566.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081659566.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081659566.png"
+        title="img" /></p>
+<p>当执行到PersonCrossTest()方法时，因为方法内有这么一行代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">person</span><span class="o">=</span><span class="k">new</span> <span class="n">Person</span><span class="o">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>JVM需要在堆内另外开辟一块内存来存储new Person()，假如地址为“xo3333”，那此时形参person指向了这个地址，假如真的是引用传递，那么由上面讲到：<strong>引用传递中形参实参指向同一个对象，形参的操作会改变实参对象的改变</strong>。</p>
+<p>可以推出：实参也应该指向了新创建的person对象的地址，所以在执行PersonCrossTest()结束之后，最终输出的应该是后面创建的对象内容。</p>
+<p>然而实际上，最终的输出结果却跟我们推测的不一样，<strong>最终输出的仍然是一开始创建的对象的内容</strong>。</p>
+<p>由此可见：<strong>引用传递，在Java中并不存在。</strong></p>
+<p>但是有人会疑问：为什么第一个例子中，在方法内修改了形参的内容，会导致原始对象的内容发生改变呢？</p>
+<p>这是因为：<strong>无论是基本类型和是引用类型，在实参传入形参时，都是值传递，也就是说传递的都是一个副本，而不是内容本身。</strong></p>
+<p><strong>无论是基本类型和是引用类型，在实参传入形参时，都是值传递，也就是说传递的都是一个副本，而不是内容本身。</strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081736566.png"
+        data-srcset="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081736566.png, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081736566.png 1.5x, https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081736566.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/strutter0816/githubPngImags/main/img/202312081736566.png"
+        title="img" /></p>
+<p>有图可以看出，<strong>方法内的形参person和实参p并无实质关联</strong>，它只是由<strong>p处copy了一份指向对象的地址</strong></p>
+<p><strong>p和person都是指向同一个对象</strong>。</p>
+<p>因此在第一个例子中，对形参p的操作，会影响到实参对应的对象内容。而在第二个例子中，当执行到new Person()之后，JVM在堆内开辟一块空间存储新对象，并且把person改成指向新对象的地址，此时：</p>
+<p><strong>p依旧是指向旧的对象，person指向新对象的地址。</strong></p>
+<p>所以此时<strong>对person的操作，实际上是对新对象的操作，于实参p中对应的对象毫无关系</strong>。</p>
+<p>因此可见：在<strong>Java中所有的参数传递，不管基本类型还是引用类型，都是值传递，或者说是副本传递</strong>。
+只是在传递过程中：</p>
+<p><strong>如果是对基本数据类型的数据进行操作，由于原始内容和副本都是==存储实际值==，并且是在==不同的栈区==，因此形参的操作，不影响原始内容。</strong></p>
+<p><strong>如果是对引用类型的数据进行操作，分两种情况，一种是==形参和实参==保持指向==同一个对象地址（存储在堆的对象）==，则形参的操作，会影响实参指向的对象的内容。一种是形参被改动==指向新的对象地址==（如==重新赋值引用==），则形参的操作，不会影响实参指向的对象的内容。</strong></p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
